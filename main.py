@@ -12,46 +12,53 @@ warnings.filterwarnings('ignore')
 
 df_Ibov = pd.read_csv('./data/ibov.csv').dropna().iloc[:-1]
 df_Ibov = df_Ibov.rename(columns={'Close': 'preco_fechamento'})
-ibov_mean = df_Ibov['preco_fechamento'].mean()
-ibov_desvio= df_Ibov['preco_fechamento'].std()
-ibov_mediana = df_Ibov['preco_fechamento'].median()
-ibov_moda = df_Ibov['preco_fechamento'].mode()
+ibov_mean = round(df_Ibov['preco_fechamento'].mean(), 2)
+ibov_desvio= round(df_Ibov['preco_fechamento'].std(), 2)
+ibov_mediana = round(df_Ibov['preco_fechamento'].median(), 2)
+ibov_moda = round(df_Ibov['preco_fechamento'].mode(), 2)
+
+
+print(f'\n-Preço de fechamento Ibovespa')
+print(f'A média dos preços do Ibovespa em 5 anos: {ibov_mean}')
+print(f'A desvio-padrão dos preços do Ibovespa em 5 anos: {ibov_desvio}')
+print(f'A mediana dos preços do Ibovespa em 5 anos: {ibov_mediana}')
+print(f'A moda dos preços do Ibovespa em 5 anos: {ibov_moda}')
 
 
 print(f'\n-Preço de fechamento Dolar dx')
 df_dolar_dx = pd.read_csv('./data/dolar_dx.csv').dropna().iloc[:-1]
 df_dolar_dx = df_dolar_dx.rename(columns={'Close': 'preco_fechamento'})
-dolar_dx_mean = df_dolar_dx['preco_fechamento'].mean()
+dolar_dx_mean = round(df_dolar_dx['preco_fechamento'].mean(), 2)
 print(f'A média dos preços do dolar_dx em 5 anos: {dolar_dx_mean}')
-dolar_dx_desvio= df_dolar_dx['preco_fechamento'].std()
+dolar_dx_desvio= round(df_dolar_dx['preco_fechamento'].std(), 2)
 print(f'A desvio-padrão dos preços do dolar_dx em 5 anos: {dolar_dx_desvio}')
-dolar_dx_mediana = df_dolar_dx['preco_fechamento'].median()
+dolar_dx_mediana = round(df_dolar_dx['preco_fechamento'].median(), 2)
 print(f'A mediana dos preços do dolar_dx em 5 anos: {dolar_dx_mediana}')
-dolar_dx_moda = df_dolar_dx['preco_fechamento'].mode()
+dolar_dx_moda = round(df_dolar_dx['preco_fechamento'].mode(), 2)
 print(f'A moda dos preços do dolar_dx em 5 anos: {dolar_dx_moda}')
 
 print(f'\n-Preço de fechamento Petr4')
 df_petr4 = pd.read_csv('./data/petr4.csv').dropna().iloc[:-1]
 df_petr4 = df_petr4.rename(columns={'Close': 'preco_fechamento'})
-petr4_mean = df_petr4['preco_fechamento'].mean()
+petr4_mean = round(df_petr4['preco_fechamento'].mean(), 2)
 print(f'A média dos preços do petr4 em 5 anos: {petr4_mean}')
-petr4_desvio= df_petr4['preco_fechamento'].std()
+petr4_desvio= round(df_petr4['preco_fechamento'].std(), 2)
 print(f'A desvio-padrão dos preços do petr4 em 5 anos: {petr4_desvio}')
-petr4_mediana = df_petr4['preco_fechamento'].median()
+petr4_mediana = round(df_petr4['preco_fechamento'].median(), 2)
 print(f'A mediana dos preços do petr4 em 5 anos: {petr4_mediana}')
-petr4_moda = df_petr4['preco_fechamento'].mode()
+petr4_moda = round(df_petr4['preco_fechamento'].mode(), 2)
 print(f'A moda dos preços do petr4 em 5 anos: {petr4_moda}')
 
 print(f'\n-Palavra Guerra')
 df_word_war = pd.read_csv('./data/guerra.csv').dropna().iloc[:-1]
 df_word_war = df_word_war.rename(columns={'Guerra': 'data_word'})
-word_mean = df_word_war['data_word'].mean()
+word_mean = round(df_word_war['data_word'].mean(), 2)
 print(f'A média da palavra guerra em 5 anos: {word_mean}')
-word_desvio= df_word_war['data_word'].std()
+word_desvio= round(df_word_war['data_word'].std(), 2)
 print(f'A desvio-padrão da palavra guerra em 5 anos: {word_desvio}')
-word_mediana = df_word_war['data_word'].median()
+word_mediana = round(df_word_war['data_word'].median(), 2)
 print(f'A mediana da palavra guerra em 5 anos: {word_mediana}')
-word_moda = df_word_war['data_word'].mode()
+word_moda = round(df_word_war['data_word'].mode(), 2)
 print(f'A moda da palavra guerra em 5 anos: {word_moda}')
 
 
@@ -71,7 +78,6 @@ X_dolar_dx = df_dolar_dx_ultimos_5_anos['preco_fechamento'].to_numpy()
 X_petr4 = df_petr4_ultimos_5_anos['preco_fechamento'].to_numpy()
 
 X_series = [X_ibov, X_petr4, X_dolar_dx]
-X_matrix = np.vstack(X_series).T
 
 Y_word_war = df_word_war['data_word'].to_numpy()
 
@@ -122,3 +128,4 @@ fig.text(0.18, 0.93, 'Investigação da relação entre os preços semanais das 
 fig.text(0.21, 0.91, 'Os dados abrangem um período de 5 anos, de 2018 a 2023. Os gráficos abaixo ilustram essa análise de regressão linear simples.', fontsize=12)
 plt.tight_layout()
 plt.show()
+
