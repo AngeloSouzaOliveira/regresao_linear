@@ -293,5 +293,3 @@ RIBEIRO, Cássio; Neto, Henrique; Sene, Túlio. A oscilação do preço do petr�
 VERAS, Rodrigo. Conflitos Armados Como Causadores de Choques no Preço do Petróleo e seus Impactos na Economia. 2023. Monografia de Final de Curso. Pontifícia Universidade Católica, Departamento de Economia, Rio de Janeiro. Orientador(a): Eliane Gottlieb. Disponível em: <https://www.econ.puc-rio.br/uploads/adm/trabalhos/files/Mono_23.1_Rodrigo_Martinez_F_Veras.pdf >. Acesso:01nov.2023.
 
 YAHOO FINANCE. Yahoo Finance. Disponível em: <https://finance.yahoo.com/>. Acesso: 28 out. 2023.
-
-1 "A maldição do petróleo: como a riqueza do petróleo molda o desenvolvimento de nações"
