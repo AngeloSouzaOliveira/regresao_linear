@@ -1,21 +1,21 @@
 # Regressão Linear: EXPLORANDO A RELAÇÃO ENTRE ATIVOS FINANCEIROS E GUERRAS
-RESUMO
+### RESUMO
 Este estudo explora a relação entre conflitos armados e mercados financeiros, com foco em ativos-chave, como Petrobras, Ibovespa e o valor do dólar com base no índice norte-americano. Os conflitos globais historicamente influenciam a volatilidade do petróleo, impactando diretamente nos preços das ações da Petrobras, líder do setor petrolífero no Brasil e umas das principais no mundo. O presente trabalho analisa a indicência da palavra "Guerra" no Google Trends como indicador de instabilidade geopolítica e a sua relação com os ativos financeiros. Por meio do uso da análise de dados e da regressão linear, busca-se quantificar a influência dos conflitos na dinâmica desses ativos financeiros. A compreensão dessa relação é crucial para profissionais de mercado e investidores, permitindo antecipar e mitigar riscos em um mundo cada vez mais interconectado.
 
 Palavras-chave: Conflitos armados. Mercados financeiros. Petrobras. Ibovespa. Dólar americano. Regressão linear.
 
-INTRODUÇÃO
+## INTRODUÇÃO
 Com o avanço da globalização e o aumento da interconexão entre os mercados financeiros em todo o mundo, tornou-se evidente o impacto dos conflitos geopolíticos nesse cenário. Os conflitos armados, historicamente desempenham um papel significativo na volatilidade dos preços do petróleo, o que, por sua vez, afeta diretamente o preço das ações da Petrobras, uma das maiores empresas de petróleo do mundo e a maior do ramo no Brasil. Este trabalho visa analisar a relação entre a incidência da palavra "Guerra" e sua correlação com os preços de ativos financeiros, com foco nas ações da Petrobras (PETR4), o índice Ibovespa e o valor do índice do dólar norte-americano (Dollar DXY) por meio da regressão linear.
 
 O objetivo é realizar uma análise de regressão simples, acompanhada de uma análise descritiva. Será abordado a complexa relação entre a incidência da palavra "Guerra" nos últimos cinco anos no Google Trends e os preços semanais das ações da PETROBRAS, do IBOVESPA e do índice do dólar norte-americano (Dollar DXY) no período de outubro de 2018 a outubro de 2023. Ao considerar os impactos das guerras na geopolítica e as instabilidades nas regiões produtoras de petróleo, como o Oriente Médio e a Rússia, esta análise busca corroborar o padrão dos impactos das guerras na volatilidade desses ativos financeiros.
 
-DIAGNÓSTICO** E **TEORIZAÇÃO
-Problemática
+## DIAGNÓSTICO** E **TEORIZAÇÃO
+### Problemática
 A problemática em questão se relaciona à complexa relação entre conflitos armados e os preços dos ativos nos mercados financeiros, com foco nos seguintes ativos: PETR4 (ações da Petrobras), o índice Ibovespa e o índice do dólar norte-americano. A importância dessa temática se fundamenta na necessidade de analisar como os conflitos armados afetam os mercados financeiros, proporcionando uma compreensão valiosa para analistas financeiros, investidores e outros profissionais do mercado financeiro em suas tomadas de decisão.
 
 Vale ressaltar que historicamente os conflitos armados ao redor do mundo têm impactado significativamente o preço do petróleo. Esse fato afeta diretamente na Petrobras, no índice Ibovespa e consequentemente na economia global.
 
-Justificativa
+### Justificativa
 A análise de dados e a Regressão Linear são ferramentas em potencial para compreender a relação entre conflitos armados e os mercados financeiros. Esse trabalho concentra-se em um estudo que analisa a incidência da palavra "Guerra" como um indicador de instabilidade e sua relação com a dinâmica multifacetada dos ativos financeiros.
 
 A relação entre petróleo e guerra é histórica e complexa. Os conflitos geopolíticos têm um impacto significativo no mercado de petróleo, influenciando seu preço e consequentemente, afetando os investimentos e a economia global. Com a crescente globalização e interconexão dos atores globais, os conflitos armados em diferentes partes do mundo causam instabilidade nos mercados de petróleo, gerando impactos que se estendem para além das fronteiras nacionais. Essa interdependência evidencia a importância de compreender a relação entre petróleo e guerra para prever os impactos nos mercados financeiros e na economia global.
@@ -28,10 +28,10 @@ Uma das ferramentas que possibilita analisar a incidência nas buscas pelo mundo
 
 A utilização da regressão linear é uma abordagem estatística amplamente difundida que permite quantificar a relação entre a variável dependente (preço do ativo financeiro) e sua relação com a variável independente (incidência da palavra "Guerra").
 
-Objetivo Geral
+### Objetivo Geral
 O presente projeto tem como objetivo analisar a relação entre os conflitos armadose a dinâmica dos ativos financeiros, com foco no preço petróleo, no índice Ibovespa e no valor do índice do dolar norte americano, por meio da utilização da análise de dados e a aplicação da regressão linear.
 
-Objetivos Específicos
+### Objetivos Específicos
 Avaliar a incidência da palavra "Guerra" no Google Trends como indicador de instabilidade geopolítica;
 
 Realizar análise descritiva do índice Ibovespa, Petra4 (Petroleo Brasileiro SA Petrobras Preference Shares), dolar DXY (Índice do Dólar Norte-Americano) e a índicência mundial da palavra "Guerra" no Google Trends nos últimos 5 anos;
@@ -44,7 +44,7 @@ Analisar como os conflitos geopolíticos podem impactar a cotação do dólar, c
 
 Aplicar a regressão linear para quantificar a relação entre a incidência da palavra "Guerra" e os ativos financeiros;
 
-Referencial teórico
+### Referencial teórico
 De acordo com Dinstein (2004), na visão de Oppenheim, o conceito de guerra pode ser constituído por quatro elementos:
 
 a) a existência de um conflito envolvendo pelo menos dois Estados;
@@ -61,10 +61,7 @@ ParaVeras (2023):
 
 Ao longo da história, a variação do preço da principal commodity foi responsável por provocar alterações em escalas massivas na economia global em diferentes ocasiões. Um caso recente responsável por gerar efeitos aparentemente semelhantes foi o da Guerra entre Rússia e Ucrânia. (VERAS R., 2023, p.8).
 
-Na notícia "A 'maldição' do petróleo e o futuro das guerras", publicada no jornal O Globo, em 15 de janeiro de 2023, Michael Ross, professor de Ciências Políticas da Universidade da Califórnia em Los Angeles (UCLA) e autor do livro "The Oil Curse: How Petroleum Wealth Shapes the Development of Nations
-
-1
-", afirma que nos últimos 60 anos, pelo menos 40% das guerras no mundo foram motivadas pelo controle de recursos naturais.
+Na notícia "A 'maldição' do petróleo e o futuro das guerras", publicada no jornal O Globo, em 15 de janeiro de 2023, Michael Ross, professor de Ciências Políticas da Universidade da Califórnia em Los Angeles (UCLA) e autor do livro "The Oil Curse: How Petroleum Wealth Shapes the Development of Nations", afirma que nos últimos 60 anos, pelo menos 40% das guerras no mundo foram motivadas pelo controle de recursos naturais.
 
 Corroborando com a temática e em voga na atualidade é o que pode ser denominado como a "Maldição dos Recursos Naturais" e que de acordo com Natalino (2021) pode ser compreendido da seguinte maneira:
 
@@ -76,18 +73,18 @@ No que tange ao controle dos preços, Novais (2017) ressalta que a Organização
 
 Por fim, Bone (2003), destaca que o Ibovespa (índice Bovespa) é composto por, em média, 55 empresas, sendo a Petrobras a que possui o maior peso na bolsa brasileira, exercendo uma relação direta de causalidade que pode interferir positivamente ou negativamente no preço do Ibovespa.
 
-PLANEJAMENTOEDESENVOLVIMENTODOPROJETO
-Planodetrabalho
+### PLANEJAMENTO E DESENVOLVIMENTO DO PROJETO
+#### Plano de trabalho
 O plano de trabalho para o desenvolvimento do presente projeto tem o objetivodeestruturarumplanodetrabalhoparao desenvolvimento deum estudo que possa analisar a relação entre a inciência mundial da palavra "Guerra" e sua relação com preço de ativos do mercado financeiros.
 
 | | 16/10 | 23/10 | 31/10 | 06/11 | 13/11 | 20/11 | | --- | --- | --- | --- | --- | --- | --- | | EscolhadoTema | X | X | | | | | | ElaboraçãodaAnálise | X | X | X | X | X | X | | Banner | | | X | | | | | ExposiçãoBanner | | | | X | X | | | EntregadoTexto | | | | X | | | | TextoFinal | | | | | X | | | NotaFinal(NF) | | | | | | X |
 
-Metodologia
+#### Metodologia
 Para a pesquisa exploratória em relação ao referencial teórico, foram utilizadas o Google Acadêmico e notícias que tange a temática, com a finalidade de identificar, selecionar e revisar os principais estudos e teorias relacionadas à complexa relação entre conflitos armados e o mercado financeiro. Esse procedimento permitiu embasar teoricamente a análise realizada neste trabalho e garantir que as práticas adotadas estivessem alinhadas com as tendências e abordagens atuais na área de estudo.
 
 A metodologia aplicada durante a etapa de desenvolvimento da aplicação, envolve o uso do Python 3.8 em um ambiente de programação com a interface interativa do Jupyter Notebook. Utilizou-se a biblioteca 'Pandas' para a análise e manipulação de dados de arquivos CSV por meio de suas funções. O NumPy foi empregado para facilitar o empilhamento de arrays verticalmente, usando a função vstack(), bem como na transformação de dataframes em arrays__NumPy por meio da função to_numpy(). Por fim, utilizou-se a função polyfit() para o cálculo dos coeficientes angulares e interceptos. Adicionalmente, as bibliotecas Matplotlib e Seaborn foram empregadas para a geração de gráficos estatísticos. Os dados brutos dos ativos financeiros foram obtidos do Yahoo Finance, e os registros no mundo da palavra "Guerra" foi retirado do Google Trends na periodicidade semanal de outubro de 2018 a outubro de 2023.
 
-Análise de Regressão Linear
+#### Análise de Regressão Linear
 No contexto da pós-modernidade e com o grande avanço da sociedade da informação, que proporciona interconectividade e difusão de dados, resultando em um grande volume de novos dados, com isso novos horizontes podem ser descobertos pelas organizações.
 
 Big Data é uma área que se dedica a explorar, analisar, processar e armazenar conjuntos extensos de informações, frequentemente originados de fontes diversas. Dentro desse contexto, a análise de dados se configura como uma colaboração interdisciplinar que abrange várias áreas do conhecimento e oferece a base fundamental para a coleta de dados, a detecção de padrões e o tratamento de informações, fundamentando o processo de tomada de decisão.
@@ -112,37 +109,36 @@ Fonte: Elaboração própria
 
 Conclui-se que existe uma correlação positiva entre o preço das ações da PETR4 (Petroleo Brasileiro SA Petrobras Preference Shares), o Dollar DXY (Índice do Dólar Norte-Americano) e a incidência da palavra "guerra". No entanto, a correlação é mais fraca com o Ibovespa devido à representação de apenas 7,061% das ações da PETR4 (Petroleo Brasileiro SA Petrobras Preference Shares) no índice IBOVESPA, resultando em uma correlação positiva, porém modesta.
 
-Análise Descritiva
+#### Análise Descritiva
 Mukhiya e Ahmed (2020) afirmam que a análise descritiva ajuda na descrição e compreensão de conjuntos de dados e fornece como resultante um resumo referente ao conjunto de dados no qual foi realizado a análise.
 
 Dessa forma, foi realizada a análise descritiva para cada variável identificada na regressão linear, variável dependete e independete dentro da péridicidade do preço de fechamento semanal entre outubro de 2018 a outubro de 2023.
 
-Índice do Dólar DXY:
+##### Índice do Dólar DXY:
 A média dos preços em 5 anos: 98.41;
 O desvio-padrão dos preços em 5 anos: 5.27;
 A mediana dos preços em 5 anos: 97.5; e
 A moda dos preços em 5 anos: 0 - 92.23 e 1 - 96.92.
-Petra4 (Petroleo Brasileiro SA Petrobras Preference Shares):
+
+##### Petra4 (Petroleo Brasileiro SA Petrobras Preference Shares):
 A média dos preços em 5 anos: 26.97;
 O desvio-padrão dos preços em 5 anos: 4.29;
 A mediana dos preços em 5 anos: 27.0; e
 A moda dos preços em 5 anos: 0 - 24.00, 1 - 26.99, 2 – 30.28.
-Análise Descritiva do índice do Ibovespa:
+
+##### Análise Descritiva do índice do Ibovespa:
 A média dos preços em 5 anos: 106750.03;
 O desvio-padrão dos preços em 5 anos: 11361.77;
 A mediana dos preços em 5 anos: 107876.0; e
 A moda dos preços em 5 anos: 0 - 103501.0, 1 - 118758.0.
-Incidência da palavra guerra nos últmos 5 anos ao redor do mundo:
+
+##### Incidência da palavra guerra nos últmos 5 anos ao redor do mundo:
 A média em 5 anos: 14.46;
-
 O desvio-padrão em 5 anos: 8.57;
-
 A mediana em 5 anos: 12.0; e
-
 A moda dos preços em 5 anos: 0 - 12.
-
-ENCERRAMENTO DO PROJETO
-Relato Coletivo
+### ENCERRAMENTO DO PROJETO
+#### Relato Coletivo
 Por meio deste projeto foi possível identificar a importância de analisar a relação entre conflitos geopolíticos e os ativos do mercado financeiro. Essa análise é de grande relevância para profissionais do mercado, investidores e analistas financeiros, permitindo a antecipação e mitigação de riscos.
 
 No que diz respeito aos ativos financeiros, que são as variáveis dependentes na regressão linear, o foco do estudo se concentrou nas ações da Petrobras - PETR4 (Petroleo Brasileiro SA Petrobras Preference Shares), no índice Ibovespa e no índice do dólar norte-americano (Dollar DXY), todos com relações diretas com o mercado financeiro brasileiro.
@@ -153,7 +149,7 @@ Esse contexto contribuiu para a tese de que as instabilidades geopolíticas poss
 
 Em resumo, o projeto alcançou seus objetivos e obteve sucesso em relação às metas estabelecidas. Isso pode proporcionar insights valiosos sobre a interação entre conflitos armados e os mercados financeiros, promovendo uma compreensão mais ampla dos riscos e oportunidades na dinâmica do mercado financeiro brasileiro em um contexto globalizado.
 
-Código Desenvolvido
+#### Código Desenvolvido
 O código desenvolvido realiza a importação das bibliotecas que fornecem a base fundamental para o funcionamento do código:
 
 import pandas as pd
@@ -313,7 +309,7 @@ O gráfico é exibido:
 
 plt.show()
 
-REFERÊNCIAS
+### REFERÊNCIAS
 BONE, Rosemarie Bröker. Existe Causalidade entre as Ações da Petrobras Holding e o IBOVESPA no Período de 1994-2002? In: 2º Congresso Brasileiro de P&D em Petróleo & Gás. Rio de Janeiro, 2003. Disponível em: <https://www.portalabpg.org.br/PDPetro/2/8011.pdf>. Acesso:01nov.2023.
 
 CAETANO, Marco Antonio L . Python e mercado financeiro. Ed. Blucher, 2021 SP. E-book. ISBN 9786555062410. Disponível em: <https://integrada.minhabiblioteca.com.br/#/books/9786555062410/>. Acesso em: 05 nov. 2023.
